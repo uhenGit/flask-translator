@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'/>
+		<link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
+		<title>Flask translator</title>
+	</head>
+	<body>
+		<h2>Home page</h2>
+		<form action="/" method="POST">
+			<input type="text" name="data-string" placeholder="type your query string here..."/>
+			<input type="submit" name="submit" value="GO"/>
+		</form>
+		<input type="text" name="result" value={{data}} />
+	</body>
+</html>
